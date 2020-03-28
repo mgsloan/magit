@@ -143,7 +143,7 @@ repositories are displayed."
   "Major mode for browsing a list of Git repositories."
   (setq x-stretch-cursor        nil)
   (setq tabulated-list-padding  0)
-  (setq tabulated-list-sort-key (cons "Path" nil))
+  (setq tabulated-list-sort-key (cons "Date" "reversed"))
   (setq tabulated-list-format
         (vconcat (mapcar (pcase-lambda (`(,title ,width ,_fn ,props))
                            (nconc (list title width t)
